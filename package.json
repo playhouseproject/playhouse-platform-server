@@ -1,0 +1,10 @@
+{
+  "name": "@playhouse/playhouse-platform-server",
+  "version": "0.0.0",
+  "author": "Andrey Feelashov <andreyfeelashov@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "bump-version": "npm version --no-git-tag-version"
+  }
+}
