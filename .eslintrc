@@ -1,0 +1,45 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:promise/recommended",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "promise"],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "no-console": [
+      "error",
+      {
+        "allow": ["info", "warn", "error"]
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["event", "result"]
+      }
+    ],
+    "no-shadow": [
+      "error",
+      {
+        "builtinGlobals": true,
+        "allow": ["event", "id", "name", "props", "value"]
+      }
+    ],
+    "no-var": "error",
+    "prefer-const": "error",
+    "prettier/prettier": "error",
+    "promise/catch-or-return": "off",
+    "quotes": ["error", "single"]
+  }
+}
